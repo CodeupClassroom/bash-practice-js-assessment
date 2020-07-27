@@ -1,19 +1,38 @@
-➢ Ten Functions
-===============
+Ten Functions
+=============
 
-"Ten Functions" is a prepared environment for practicing introductory function writing with automated tests for feedback.
+"Ten Functions" is a prepared environment for practicing introductory function
+writing with automated tests for feedback.
 
 ## Setup Instructions
 
-1. Clone this project
+1. Clone and open this repository
+
+    1. From The Command Line
+
+        ```
+        git clone THIS_REPOSITORY_URL ~/IdeaProjects/ten-functions
+        ```
+
+        Replacing `THIS_REPOSITORY_URL` with the clone url of this repository.
+
+        Then open the project folder in intellij
+
+    1. Using IntelliJ
+
+        Go to File->New->Project "From Version Control"->GitHub and then paste
+        the clone url of this repo.
+
+    The clone url can be found by clicking on the green "Code" button. Make
+    sure you are using the SSH remote; the url should start with
+    `git@github.com`, **not** `https://`. If the url starts with `https://`,
+    click the button in the top right of the dialog that says "Use SSH".
+
+1. Create a new git branch for your work.
 
     ```
-    git clone THIS_REPOSITORY_URL ~/IdeaProjects/ten-functions
+    git branch firstname-lastname
     ```
-
-    Replacing `THIS_REPOSITORY_URL` with the clone url of this repository. The clone url can be found by clicking on the green "Code" button. Make sure you are using the SSH remote; the url should start with `git@github.com`, **not** `https://`. If the url starts with `https://`, click the button in the top right of the dialog that says "Use SSH".
-
-1. Open up the project with your IDE.
 
 1. Write your javascript code for the problems described below in
    `solutions.js`.
@@ -22,15 +41,29 @@
 
 ## Workflow
 
-1. At first, all of the test results will be red and failing, as you haven't written any code in `solutions.js` yet.
+1. At first, all of the test results will be red and failing, as you haven't
+   written any code in `solutions.js` yet.
 
-1. Inside of `solutions.js` write code that creates the functions detailed in the section below.
+1. Inside of `solutions.js` write code that creates the functions detailed in
+   the section below.
 
-1. As you make changes to the code in `solutions.js`, refresh the `index.html` page in your browser.
+1. As you make changes to the code in `solutions.js`, refresh the `index.html`
+   page in your browser.
 
 1. Observe how the test results change as you update your functions code.
 
-1. Read the output from the failing tests to help you figure out what changes you need to make to `solutions.js`.
+1. Read the output from the failing tests to help you figure out what changes
+   you need to make to `solutions.js`.
+
+1. Add and commit per usual.
+
+1. When you are finished with the assessment, push **your branch**.
+
+    ```
+    git push origin firstname-lastname
+    ```
+
+    Where `firstname-lastname` is the same as the branch you created previously.
 
 ## The "Ten Functions" Exercises
 
@@ -50,7 +83,8 @@
         isTrue("Banana")         // false
         isTrue([1, 2])           // false
 
-2. Define a function named `isFalse` that takes in a value and returns a true if and only if the provided input is equal to false in both type and value.
+2. Define a function named `isFalse` that takes in a value and returns a true if
+   and only if the provided input is equal to false in both type and value.
 
         isFalse(false)             // true
         isFalse(true)              // false
@@ -60,7 +94,8 @@
         isFalse("Banana")          // false
         isFalse([1, 2])            // false
 
-3. Define a function named `not` that takes in any input and returns the boolean opposite of the provided input.
+3. Define a function named `not` that takes in any input and returns the boolean
+   opposite of the provided input.
 
         not(false)                  // true
         not(0)                      // true
@@ -73,7 +108,8 @@
         not(Infinity)               // false
         not(123)                    // false
 
-4. Define a function named `addOne` that takes in a single input. If the input is a number or a numeric string, return the value plus one.
+4. Define a function named `addOne` that takes in a single input. If the input
+   is a number or a numeric string, return the value plus one.
 
         addOne(0)                    // 1
         addOne(2)                    // 3
@@ -87,7 +123,9 @@
         addOne(NaN)                  // NaN
 
 
-5. Define a function named `isEven` that takes in a single input. If the input is an even number or a string containing an even number, return `true`. Any other input should return false for the output.
+5. Define a function named `isEven` that takes in a single input. If the input
+   is an even number or a string containing an even number, return `true`. Any
+   other input should return false for the output.
 
         isEven(2)                   // true
         isEven(-8)                  // true
@@ -98,7 +136,9 @@
         isEven(false)               // false
         isEven("banana")            // false
 
-6. Define a function named `isIdentical` that takes in two input arguments. If each input is equal both in data type and in value, then return `true`. If the values are not the same data type or not the same value, return `false`.
+6. Define a function named `isIdentical` that takes in two input arguments. If
+   each input is equal both in data type and in value, then return `true`. If
+   the values are not the same data type or not the same value, return `false`.
 
         isIdentical(3, 3)                     // true
         isIdentical(false, false)             // true
@@ -108,7 +148,8 @@
         isIdentical(2, "2")                   // false
         isIdentical("javascript", "java")     // false
 
-7. Define a function named `isEqual` that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
+7. Define a function named `isEqual` that takes in two input arguments. If each
+   argument is equal only in value, then return true. Otherwise return false.
 
         isEqual(3, "3")                       // true
         isEqual("abc123", "abc123")           // true
@@ -117,7 +158,8 @@
         isEqual(4, -5)                        // false
         isEqual("java", "javascript")         // false
 
-8. Define a function named `or` that takes in two input arguments. The output returned should be the result of an `or` operation on both inputs.
+8. Define a function named `or` that takes in two input arguments. The output
+   returned should be the result of an `or` operation on both inputs.
 
         or(true, true)                    // true
         or(true, false)                   // true
@@ -125,9 +167,8 @@
         or(false, false)                  // false
         or("hello", "world")              // "hello" (this behavior is non-obvious, research more!)
 
-
-
-9. Define a function named `and` that takes in two input arguments and returns the result of a logical `and` operation of both inputs.
+9. Define a function named `and` that takes in two input arguments and returns
+   the result of a logical `and` operation of both inputs.
 
         and(true, true)                    // true
         and(true, false)                   // false
@@ -136,7 +177,9 @@
         and("hello", "world")              // "world" (this behavior is non-obvious, research more)
 
 
-10. Define a function named `concat` that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
+10. Define a function named `concat` that takes in two input arguments. If both
+    arguments are strings, then return the concatenated result. If two numbers
+    are provided, then return the string concatenation of each set of numerals.
 
         concat("code", "up")                // "codeup"
         concat("connect", 4)                // "connect4"
