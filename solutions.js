@@ -20,3 +20,47 @@
  * and
  * concat
  */
+
+function isTrue(x){
+    if (x === true) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function isFalse(x) {
+   if (x === false) {
+       return true;
+   }
+   else {
+       return false;
+   }
+}
+
+function not(x){
+    return !x
+}
+
+function addOne(x) {
+    return parseFloat(parseFloat(x) + 1);
+}
+
+function isEven(x) {
+    var evenNumber = (x % 2)
+    if (evenNumber === 0) {
+        return (true);
+    }
+}
+
+function isIdentical(x, y) {
+    if (x === y) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+
+}
