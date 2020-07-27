@@ -8,20 +8,8 @@ writing with automated tests for feedback.
 
 1. Clone and open this repository
 
-    1. From The Command Line
-
-        ```
-        git clone THIS_REPOSITORY_URL ~/IdeaProjects/ten-functions
-        ```
-
-        Replacing `THIS_REPOSITORY_URL` with the clone url of this repository.
-
-        Then open the project folder in intellij
-
-    1. Using IntelliJ
-
-        Go to File->New->Project "From Version Control"->GitHub and then paste
-        the clone url of this repo.
+    In IntelliJ, go to File->New->Project "From Version Control"->GitHub and
+    then paste the clone url of this repo.
 
     The clone url can be found by clicking on the green "Code" button. Make
     sure you are using the SSH remote; the url should start with
