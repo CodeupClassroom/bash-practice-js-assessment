@@ -37,16 +37,12 @@ function isFalse(x){
 }
 
 function not(x){
-    if(x !== true ){
-        return true;
-    } else {
-        return false;
-    }
+   return !x ;
 }
 
 function addOne(x){
     if (typeof(x) == typeof('')){
-        return parseInt(x)+1;
+        return parseFloat(x)+1;
     } else {
         return x + 1;
     }
