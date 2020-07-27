@@ -20,3 +20,82 @@
  * and
  * concat
  */
+function isTrue(x){
+    if(x === true){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+function isFalse(x){
+    if(x === false){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function not(x){
+    if(x !== true ){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function addOne(x){
+    if (typeof(x) == typeof('')){
+        return parseInt(x)+1;
+    } else {
+        return x + 1;
+    }
+}
+
+function isEven(x){
+    if (x % 2 ==0 || x == true){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function isIdentical(x, y){
+    if (x ===y ){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function isEqual(x, y){
+    if (x == y){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function or(x, y){
+    if(x == true || y == true){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function and(x, y){
+    if(x == true && y == true){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function concat(x, y){
+    if(x == typeof(" ")){
+        return x + y
+    } else {
+        return x.toString() + y.toString();
+    }
+}
