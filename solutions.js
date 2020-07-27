@@ -20,3 +20,62 @@
  * and
  * concat
  */
+
+function isTrue(valueToCheck) {
+    return valueToCheck === true;
+}
+
+function isFalse(valueToCheck) {
+    return valueToCheck === false;
+}
+
+function not(valueToCheck) {
+    return !valueToCheck;
+}
+
+function addOne(value) {
+    if (isNaN(value)) {
+        return NaN;
+    } else {
+        value = parseFloat(value);
+        return value + 1;
+    }
+}
+
+function isEven(value) {
+    if (isNaN(value)) {
+        return false;
+    } else {
+        value = parseFloat(value);
+        var state = (value % 2) === 0;
+        return state;
+    }
+}
+
+function isIdentical(valueOne, valueTwo) {
+    return valueOne === valueTwo;
+}
+
+function isEqual(valueOne, valueTwo) {
+    return valueOne == valueTwo;
+}
+
+function or(valueOne, valueTwo) {
+    return valueOne || valueTwo;
+}
+
+function and(valueOne, valueTwo) {
+    return valueOne && valueTwo;
+}
+
+function concat(valueOne, valueTwo) {
+    if ((typeof valueOne) != "string") {
+        valueOne = valueOne.toString();
+    }
+    if ((typeof valueTwo) != "string") {
+        valueTwo = valueTwo.toString();
+    }
+    var concatenatedResult = valueOne + valueTwo;
+    return concatenatedResult;
+}
+
