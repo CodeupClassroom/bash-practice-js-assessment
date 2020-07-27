@@ -1,5 +1,6 @@
 "use strict";
 
+
 /**
  * Write your solutions here.
  *
@@ -20,3 +21,60 @@
  * and
  * concat
  */
+
+function isTrue(input) {
+    if (input === true) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isFalse(input) {
+    if (input === "true") {
+        return true;
+    } else if (input === false) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function not(input) {
+    if (input == true) {
+       return false;
+    } else if (input == false) {
+        return true;
+    }
+}
+
+function addOne(input) {
+    return parseFloat(input) + 1;
+}
+
+function isEven(input) {
+    if (parseFloat(input) % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isIdentical(a, b) {
+    if (a === b) {
+      return true;
+    } else {
+        return false;
+    }
+}
+
+function isEqual(a, b) {
+    if (a == b) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+
