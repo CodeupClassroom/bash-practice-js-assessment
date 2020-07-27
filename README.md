@@ -32,6 +32,7 @@ writing with automated tests for feedback.
 
     ```
     git branch firstname-lastname
+    git checkout firstname-lastname
     ```
 
 1. Write your javascript code for the problems described below in
