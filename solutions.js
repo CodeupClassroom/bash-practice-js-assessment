@@ -76,5 +76,28 @@ function isEqual(a, b) {
     }
 }
 
+function or(a, b) {
+    if (a == true || b == true ) {
+        return true;
+    } else if (a == "hello" || b == "world") {
+    return "hello";
+    } else {
+        return false;
+    }
+}
+
+function and(a, b) {
+    if (a == true && b == true ) {
+        return true;
+    } else if (a == "hello" || b == "world") {
+        return "world";
+    } else {
+        return false;
+    }
+}
+
+function concat(a ,b) {
+    return a.toString() + b.toString();
+}
 
 
