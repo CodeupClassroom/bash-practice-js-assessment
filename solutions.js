@@ -66,10 +66,5 @@ function and(arg,arg1){
 
 // 10 concat
 function concat(arg,arg1){
-    if(typeof(arg)==typeof(arg1)){
-        return arg + arg1;
-    }
-    else if(!isNaN(arg) && !isNaN(arg1)){
-        return arg.toString() + arg1.toString();
-    }
+    return (typeof(arg) === "string" && typeof(arg1)=== "string") ? arg+arg1 : arg.toString() + arg1;
 }
