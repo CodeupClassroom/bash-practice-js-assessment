@@ -57,7 +57,7 @@ function addOne(x) {
 // 5.) isEven
 
 function isEven(x) {
-    return (x % 2 == 0);
+    return (x % 2 === 0 && x !== false);
 
 }
 
@@ -96,9 +96,6 @@ function and(x , y) {
 // 10.) concat
 
 function concat(x , y) {
-    if (typeof x !== "string" || typeof y !== "string") {
-        return (toString(x) + toString(y));
-    } else {
-        return x + y;
-    }
+return x + y;
+
 }
