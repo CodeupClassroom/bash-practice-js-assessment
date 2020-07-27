@@ -41,11 +41,8 @@ function isFalse(input) {
 }
 
 function not(input) {
-    if (input == true) {
-       return false;
-    } else if (input == false) {
-        return true;
-    }
+
+    return !input;
 }
 
 function addOne(input) {
