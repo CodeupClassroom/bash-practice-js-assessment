@@ -20,3 +20,53 @@
  * and
  * concat
  */
+
+var isTrue = input => {
+    return input === true;
+}
+
+var isFalse = input => {
+    return input === false;
+}
+
+var not = input => {
+    return !input;
+}
+
+var addOne = input => {
+    var number = parseFloat(input);
+
+    if (typeof(number) === "number") {
+        return (number + 1);
+    }
+    return NaN;
+}
+
+var isEven = input => {
+    var number = parseFloat(input);
+
+    if (typeof(number) === "number") {
+        return (number % 2 === 0);
+    }
+    return NaN;
+}
+
+var isIdentical = (input1, input2) => {
+    return (input1 === input2);
+}
+
+var isEqual = (input1, input2) => {
+    return (input1 == input2);
+}
+
+var or = (input1, input2) => {
+    return (input1 || input2);
+}
+
+var and = (input1, input2) => {
+    return (input1 && input2);
+}
+
+var concat = (input1, input2) => {
+    return '' + input1 + input2;
+}
