@@ -20,3 +20,39 @@
  * and
  * concat
  */
+function isTrue(){
+
+}
+function isFalse(){
+    return (false === false)
+}
+function not(x){
+    return x = !x
+}
+function addOne(x){
+    return x === x + 1
+}
+function isEven() {
+    if (isEven === isEven % 2) {
+        return true
+    } else {
+        return false
+    }
+}
+function isIdentical(x,y){
+    if(isIdentical === isIdentical % 2){
+        return true
+    }else {
+        return false
+    }
+
+}
+function isEqual(a,b) {
+    if (isEqual = (a || b)){
+        return true
+    }
+else
+    {
+        return false
+    }
+}
