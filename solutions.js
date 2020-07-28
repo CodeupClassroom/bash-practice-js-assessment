@@ -36,7 +36,7 @@ function not(arg){
 }
 // 4. addOne
 function addOne(arg){
-    return !isNaN(parseInt(arg)) ? parseInt(arg) + 1 : arg;
+    return (parseFloat(arg) + 1);
 }
 
 // 5. isEven
@@ -66,5 +66,5 @@ function and(arg,arg1){
 
 // 10 concat
 function concat(arg,arg1){
-    return (typeof(arg) === "string" && typeof(arg1)=== "string") ? arg+arg1 : arg.toString() + arg1;
+    return arg.toString() + arg1.toString();
 }
