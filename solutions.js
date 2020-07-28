@@ -96,6 +96,6 @@ function and(x , y) {
 // 10.) concat
 
 function concat(x , y) {
-return x + y;
+    return (x + "") + (y + "");
 
 }
