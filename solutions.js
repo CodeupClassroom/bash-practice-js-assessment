@@ -21,39 +21,60 @@
  * concat
  */
 
-function isTrue (x) {
-    if (x === x)
+function isTrue(x) {
+    if (x === true) {
         return true;
+    } else {
+        return false;
+    }
+
 }
 
-function isFalse (x) {
-    if (x === x )
+
+function isFalse(x) {
+    if (x === false) {
+        return true;
+    } else {
         return false;
+    }
 }
 
 function not(x) {
-    if (x === true);
-    return false;
-
+    if (x === true || x > 0 || x === "hello") {
+        return false;
+    } else if (x !== true){
+        return true;
+    }
 }
 
 function addOne(x) {
-    return (x + 1);
+    return Number((+x) + 1);
 }
 
 function isEven(x) {
-    if (x % 0);
-    return true;
+    if (x === false) {
+        return false;
+    } else if (x % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-function isIdentical(x,y) {
-    if (x === y);
-    return true;
+function isIdentical(x, y) {
+    if (x === y) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function isEqual(x, y) {
-    is (x == y);
-    return true;
+    if (x == y) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function or(x, y) {
@@ -65,6 +86,6 @@ function and(x, y) {
 }
 
 function concat(x, y) {
-    return ("x + y");
+    return (x.toString() + y.toString());
 }
 
