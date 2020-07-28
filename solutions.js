@@ -49,9 +49,7 @@ function addOne(x) {
 
 function isEven(x) {
     var evenNumber = (x % 2)
-    if (evenNumber === 0) {
-        return (true);
-    }
+    return evenNumber === 0;
 }
 
 function isIdentical(x, y) {
@@ -63,4 +61,39 @@ function isIdentical(x, y) {
     }
 
 
+}
+
+function isEqual(x, y){
+    if (x == y) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function or(x, y) {
+    if (x == true) {
+        return true;
+    } else if (y == true) {
+        return true;
+    } else
+        return x;
+}
+
+function and(a, b) {
+    if (a == true) {
+        return true;
+    } else if (a == false) {
+        return false;
+    } else if (b == true) {
+        return true;
+    } else if (b == false) {
+        return false;
+    }else
+        return (b);
+}
+
+function concat(x, y) {
+    return (x.toString() + y.toString());
 }
